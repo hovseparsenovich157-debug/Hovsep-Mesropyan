@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mesropyans Production</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+
+<header class="header">
+  <div class="logo text-neon">Mesropyans Production</div>
+  <div class="header-buttons">
+    <button id="themeToggle" class="btn"><img src="theme.png" alt="Theme"></button>
+    <button id="langToggle" class="btn"><img src="language.png" alt="Language"></button>
+    <button id="homeBtn" class="btn"><img src="home.png" alt="Home"></button>
+  </div>
+</header>
+
+<!-- CAROUSEL -->
+<section class="carousel-wrap">
+  <button class="prev">‹</button>
+  <div class="carousel">
+    <div class="slide"><img src="skoro.jpg" alt="Slide 1"></div>
+    <div class="slide"><img src="video1.png" alt="Slide 2"></div>
+    <div class="slide"><img src="chto budet.png" alt="Slide 3"></div>
+  </div>
+  <button class="next">›</button>
+</section>
+
+<!-- MAIN VIDEO -->
+<section class="main-video-section video-neon">
+  <video id="mainPlayer" poster="skoro.jpg" playsinline autoplay muted></video>
+  <div class="main-controls">
+    <button id="mainPlay" class="control-btn"><img src="play.png" alt="Play"></button>
+    <button id="mainMute" class="control-btn"><img src="volume-on.png" alt="Volume"></button>
+    <button id="rewind" class="control-btn">«15s</button>
+    <button id="forward" class="control-btn">+5s</button>
+    <button id="mainFS" class="control-btn">⛶</button>
+  </div>
+  <div class="progress-container">
+    <div id="progressBar" class="progress-bar">
+      <div id="progressFilled" class="progress-filled"></div>
+    </div>
+  </div>
+  <h2 data-lang-en class="text-neon">Premiere of the Year</h2>
+  <h2 data-lang-ru class="text-neon" style="display:none">Премьера года</h2>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown-section">
+  <h3 data-lang-en class="text-neon">Time left until the premiere</h3>
+  <h3 data-lang-ru class="text-neon" style="display:none">До премьеры осталось</h3>
+  <div class="countdown" id="countdown">
+    <div class="time-box text-neon"><span id="days">00</span><small data-lang-en>Days</small><small data-lang-ru style="display:none">Дней</small></div>
+    <div class="time-box text-neon"><span id="hours">00</span><small data-lang-en>Hours</small><small data-lang-ru style="display:none">Часов</small></div>
+    <div class="time-box text-neon"><span id="minutes">00</span><small data-lang-en>Minutes</small><small data-lang-ru style="display:none">Минут</small></div>
+    <div class="time-box text-neon"><span id="seconds">00</span><small data-lang-en>Seconds</small><small data-lang-ru style="display:none">Секунд</small></div>
+  </div>
+</section>
+
+<!-- PAROVOZIK -->
+<section class="poster-train">
+  <div id="posterTrack">
+    <div class="poster" data-video="chto budet.mp4"><img src="chto budet.png" alt="Video 1"></div>
+    <div class="poster" data-video="video1.mp4"><img src="video1.png" alt="Video 2"></div>
+    <div class="poster" data-video="skoro.mp4"><img src="skoro.jpg" alt="Video 3"></div>
+    <div class="poster" data-video="grustno.mp4"><img src="grustno.png" alt="Video 4"></div>
+  </div>
+</section>
+
+<!-- OVERLAY VIDEO -->
+<div class="player-overlay" id="playerOverlay">
+  <button class="close-btn" id="closeOverlay">✕</button>
+  <div class="player-box video-neon">
+    <video id="overlayVideo" controls playsinline></video>
+  </div>
+</div>
+
+<footer>
+  <p data-lang-en class="text-neon">© Mesropyans Production — All rights reserved.</p>
+  <p data-lang-ru class="text-neon" style="display:none">© Mesropyans Production — Все права защищены.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
