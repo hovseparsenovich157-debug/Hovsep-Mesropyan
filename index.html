@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesropyans Production</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <h1 class="logo">Mesropyans Production</h1>
+    <nav class="nav">
+      <button id="homeBtn">🏠</button>
+      <button id="langBtn">RU/EN</button>
+      <button id="themeBtn">☀️/🌙</button>
+    </nav>
+  </header>
+
+  <!-- Карусель -->
+  <section class="carousel">
+    <div class="slides">
+      <img src="images/post1.jpg" class="slide active">
+      <img src="images/post2.jpg" class="slide">
+      <img src="images/post3.jpg" class="slide">
+    </div>
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+  </section>
+
+  <!-- Плеер -->
+  <section class="player">
+    <video id="mainVideo" autoplay muted loop playsinline controls poster="images/skoro.jpg">
+      <source src="videos/skoro.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+  </section>
+
+  <!-- Два постера -->
+  <section class="two-posters">
+    <img src="images/poster_a.jpg" class="poster">
+    <img src="images/poster_b.jpg" class="poster">
+  </section>
+
+  <!-- Паровозик -->
+  <section class="carousel-row">
+    <img src="images/video1.png" class="poster">
+    <img src="images/chto_budet.png" class="poster">
+    <img src="images/grustno.png" class="poster">
+    <img src="images/skoro.jpg" class="poster">
+  </section>
+
+  <!-- Таймер -->
+  <section class="timer">
+    <h2>До 24 апреля 2026:</h2>
+    <div id="countdown"></div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <p>© 2025 Mesropyans Production. Все права защищены. | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
